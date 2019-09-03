@@ -1,5 +1,8 @@
 #include <iostream>
+#include "HelloMessage.hpp"
 
 int main() {
-    std::cout << "Hello Easy C++ project!" << std::endl;
+    //release as function terminates
+    HelloMessage message = HelloMessage();
+    std::cout<<message.getMessage();
 }
